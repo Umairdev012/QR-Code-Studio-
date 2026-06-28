@@ -1,0 +1,188 @@
+/* ===========================
+   Google Font & Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:linear-gradient(135deg,#dbeafe,#f0f9ff,#fdf2f8);
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+.card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    animation:fade .5s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.header h1{
+    color:#1e293b;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* ===========================
+   Input
+=========================== */
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#334155;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border-radius:14px;
+    border:2px solid #dbeafe;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.buttons button{
+    flex:1;
+    min-width:120px;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+.buttons button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(37,99,235,.15);
+}
+
+.primary{
+    background:linear-gradient(135deg,#2563eb,#4f46e5)!important;
+    color:#fff!important;
+}
+
+/* ===========================
+   QR Box
+=========================== */
+
+.qr-box{
+    margin-top:30px;
+    text-align:center;
+    border:2px dashed #cbd5e1;
+    border-radius:18px;
+    padding:30px;
+    background:#f8fafc;
+}
+
+.qr-box img{
+    width:230px;
+    display:none;
+    margin:auto;
+}
+
+.qr-box p{
+    color:#64748b;
+    margin-top:15px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:600px){
+
+    .card{
+        padding:22px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .buttons button{
+        width:100%;
+    }
+
+    .qr-box img{
+        width:180px;
+    }
+
+}
